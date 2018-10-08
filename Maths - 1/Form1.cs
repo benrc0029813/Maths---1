@@ -18,14 +18,21 @@ namespace Maths___1
         }
 
         double sin(double x)
-
-            {
-                return (Math.Sin(x* Math.PI/180.0));
-            }
-
-        double asin(double x)
         {
-            return (Math.Asin(x) * 180 / Math.PI);
+            return (Math.Sin(x* Math.PI/180.0));
+        }
+        double cos(double x)
+        {
+            return (Math.Cos(x * Math.PI / 180.0));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double F = Convert.ToDouble(textBox1.Text);
+            double A = Convert.ToDouble(textBox2.Text);
+            double Fx = F * cos(A);
+            double Fy = F * sin(A);
+            label1.Text = cos.ToString();
         }
     }
 }
