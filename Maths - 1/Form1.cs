@@ -15,6 +15,20 @@ namespace Maths___1
         public Form1()
         {
             InitializeComponent();
+
+            richTextBox1.AppendText("sin(100)=" + sin(100) + "\n");
+            richTextBox1.AppendText("sin-1(1)=" + asin(1) + "\n");
+        }
+
+        double sin(double x)
+
+            {
+                return (Math.Sin(x* Math.PI/180.0));
+            }
+
+        double asin(double x)
+        {
+            return (Math.Asin(x) * 180 / Math.PI);
         }
     }
 }
